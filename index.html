@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeShop - Premium Product Showcase</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <!-- Include Animate.css for animations -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet"  href="styles.css"  />
+</head>
+<body>
+  <!-- Enhanced Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PrimeShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" data-bs-toggle="dropdown">Categories</a>
+            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+              <li><a class="dropdown-item" href="#">Fashion</a></li>
+              <li><a class="dropdown-item" href="#">Home</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+        </ul>
+        <form class="d-flex w-25 mx-auto my-2 my-lg-0">
+          <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+        </form>
+        <div class="d-flex align-items-center">
+          <a href="#" class="text-white me-3 fs-5"><i class="bi bi-cart4"></i></a>
+          <a href="#" class="btn btn-outline-light me-2">Login</a>
+          <a href="#" class="btn btn-warning">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <!-- Hero Section 2025 -->
+<section class="hero-section position-relative text-white text-center overflow-hidden" style="height: 90vh;">
+    <div class="hero-bg position-absolute w-100 h-100" style="top: 0; left: 0; z-index: -1;">
+      <!-- Gradient Overlay -->
+      <div class="gradient-overlay position-absolute w-100 h-100" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(255, 153, 0, 0.3));"></div>
+      <!-- Dynamic Background (Image or Video) -->
+      <video autoplay muted loop class="w-100 h-100 object-fit-cover" style="filter: brightness(0.8);">
+        <source src="hero-video-2025.mp4" type="video/mp4">
+        <img src="hero-fallback.jpg" alt="Fallback Hero Image" class="w-100 h-100 object-fit-cover">
+      </video>
+    </div>
+    <div class="container d-flex flex-column justify-content-center h-100">
+      <h1 class="display-2 fw-bold mb-4 animate__animated animate__fadeInDown" style="text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); letter-spacing: 1px;">
+        Welcome to PrimeShop 2025
+      </h1>
+      <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-1s" style="font-size: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Experience premium products and exclusive deals, reimagined for the future.
+      </p>
+      <a href="products.html" class="btn btn-warning btn-lg px-5 py-3 animate__animated animate__pulse animate__delay-2s animate__infinite" 
+         style="border-radius: 50px; box-shadow: 0 5px 20px rgba(255, 153, 0, 0.5); font-weight: 600; text-transform: uppercase;">
+        Shop the Future
+      </a>
+    </div>
+  </section>
+  
+<!-- Featured Products Section (Multi-Item Slider) -->
+<section class="product-slider py-5">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div id="productSlider1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="smart watch.jpeg" class="card-img-top" alt="Smart Watch">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Watch</h5>
+                    <p class="text-muted small">Sleek design, powerful features.</p>
+                    <p class="fw-bold text-success mb-2">$49.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="laptop.jpeg" class="card-img-top" alt="Laptop">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Laptop</h5>
+                    <p class="text-muted small">High performance.</p>
+                    <p class="fw-bold text-success mb-2">$799.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="headphone 1.jpeg" class="card-img-top" alt="Headphones">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Headphones</h5>
+                    <p class="text-muted small">Crystal-clear sound.</p>
+                    <p class="fw-bold text-success mb-2">$99.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="wireless charger.jpeg" class="card-img-top" alt="Wireless Charger">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Wireless Charger</h5>
+                    <p class="text-muted small">Fast and efficient charging.</p>
+                    <p class="fw-bold text-success mb-2">$29.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="bluetooth speaker.jpeg" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Bluetooth Speaker</h5>
+                    <p class="text-muted small">Portable & loud bass.</p>
+                    <p class="fw-bold text-success mb-2">$59.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="gaming mouse.jpeg" class="card-img-top" alt="Gaming Mouse">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Mouse</h5>
+                    <p class="text-muted small">Precision for every move.</p>
+                    <p class="fw-bold text-success mb-2">$39.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="tablet.jpeg" class="card-img-top" alt="Tablet">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tablet</h5>
+                    <p class="text-muted small">Compact and powerful tablet device.</p>
+                    <p class="fw-bold text-success mb-2">$199.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="fitness tracker.jpeg" class="card-img-top" alt="Fitness Tracker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fitness Tracker</h5>
+                    <p class="text-muted small">Monitor your health on the go.</p>
+                    <p class="fw-bold text-success mb-2">$39.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="drone.jpeg" class="card-img-top" alt="Drone">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Drone</h5>
+                    <p class="text-muted small">Capture stunning aerial shots.</p>
+                    <p class="fw-bold text-success mb-2">$299.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 4 (NEW 6 PRODUCTS) -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="vr headset.jpeg" class="card-img-top" alt="VR Headset">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">VR Headset</h5>
+                    <p class="text-muted small">Immerse into virtual worlds.</p>
+                    <p class="fw-bold text-success mb-2">$149.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Portable Projector.jpeg" class="card-img-top" alt="Portable Projector">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Portable Projector</h5>
+                    <p class="text-muted small">Big screen anywhere you go.</p>
+                    <p class="fw-bold text-success mb-2">$189.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="smart watch.jpeg" class="card-img-top" alt="Smart Glasses">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Glasses</h5>
+                    <p class="text-muted small">Hands-free calls & display.</p>
+                    <p class="fw-bold text-success mb-2">$129.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Digital Camera.jpeg" class="card-img-top" alt="Digital Camera">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Digital Camera</h5>
+                    <p class="text-muted small">Capture memories in HD.</p>
+                    <p class="fw-bold text-success mb-2">$249.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="smart blub.jpeg" class="card-img-top" alt="Smart Bulb">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Bulb</h5>
+                    <p class="text-muted small">Change colors with voice control.</p>
+                    <p class="fw-bold text-success mb-2">$19.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="action camera.jpeg" class="card-img-top" alt="Action Camera">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Action Camera</h5>
+                    <p class="text-muted small">Adventure-proof HD recording.</p>
+                    <p class="fw-bold text-success mb-2">$179.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Navigation Buttons -->
+        <button class="custom-carousel-btn custom-prev-btn" type="button" data-bs-target="#productSlider1" data-bs-slide="prev">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="custom-carousel-btn custom-next-btn" type="button" data-bs-target="#productSlider1" data-bs-slide="next">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+ 
+  
+ <!-- New Arrivals Section (4 Items per Slide, Auto-Slide every 4s) -->
+<!-- New Arrivals Section (4 Items per Slide, Auto-Slide every 4s) -->
+<!-- New Arrivals Section (4 Items per Slide, Auto-Slide every 4s) -->
+<section class="new-arrivals py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">New Arrivals</h2>
+      <!-- Buttons for filtering or navigating through categories -->
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-primary mx-2" type="button">All Products</button>
+        <button class="btn btn-outline-primary mx-2" type="button">Smart Tech</button>
+        <button class="btn btn-outline-primary mx-2" type="button">Accessories</button>
+        <button class="btn btn-outline-primary mx-2" type="button">Home Appliances</button>
+      </div>
+      <div id="newArrivalsSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <!-- First Carousel Item -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="Wireless Earbuds.jpeg" class="card-img-top" alt="Wireless Earbuds">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Wireless Earbuds</h5>
+                    <p class="text-muted small">True wireless freedom.</p>
+                    <p class="fw-bold text-success mb-2">$29.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="Smart Thermostat.jpeg" class="card-img-top" alt="Smart Thermostat">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Thermostat</h5>
+                    <p class="text-muted small">Control your home temp.</p>
+                    <p class="fw-bold text-success mb-2">$129.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="fitness tracker (2).jpeg" class="card-img-top" alt="Fitness Tracker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fitness Tracker</h5>
+                    <p class="text-muted small">Track your goals.</p>
+                    <p class="fw-bold text-success mb-2">$39.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="electric kettle.jpeg" class="card-img-top" alt="Electric Kettle">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Electric Kettle</h5>
+                    <p class="text-muted small">Fast boiling.</p>
+                    <p class="fw-bold text-success mb-2">$34.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Carousel Item -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="Bluetooth Speaker 22.jpeg" class="card-img-top" alt="Bluetooth Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Bluetooth Speaker</h5>
+                    <p class="text-muted small">Portable audio.</p>
+                    <p class="fw-bold text-success mb-2">$59.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="Smart Light Bulb.jpeg" class="card-img-top" alt="Smart Light Bulb">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Light Bulb</h5>
+                    <p class="text-muted small">Custom lighting.</p>
+                    <p class="fw-bold text-success mb-2">$ hidden">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="Smart Plug.jpeg" class="card-img-top" alt="Smart Plug">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Plug</h5>
+                    <p class="text-muted small">Control appliances.</p>
+                    <p class="fw-bold text-success mb-2">$19.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="Dash Cam.jpeg" class="card-img-top" alt="Dash Cam">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Dash Cam</h5>
+                    <p class="text-muted small">Record your drives.</p>
+                    <p class="fw-bold text-success mb-2">$49.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Carousel Item -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="smart watch 3.jpeg" class="card-img-top" alt="Smart Watch">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Watch</h5>
+                    <p class="text-muted small">Sleek and modern.</p>
+                    <p class="fw-bold text-success mb-2">$119.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="gaming laptop.jpeg" class="card-img-top" alt="Laptop">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Laptop</h5>
+                    <p class="text-muted small">Powerful performance.</p>
+                    <p class="fw-bold text-success mb-2">$899.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="headphone 2.jpeg" class="card-img-top" alt="Bluetooth Headphones">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Bluetooth Headphones</h5>
+                    <p class="text-muted small">Noise-cancelling.</p>
+                    <p class="fw-bold text-success mb-2">$79.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="gaming tablet.jpeg" class="card-img-top" alt="Tablet">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Tablet</h5>
+                    <p class="text-muted small">Portable and powerful.</p>
+                    <p class="fw-bold text-success mb-2">$299.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth Carousel Item -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="smart speaker.jpeg" class="card-img-top" alt="Smart Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Speaker</h5>
+                    <p class="text-muted small">Voice-controlled audio.</p>
+                    <p class="fw-bold text-success mb-2">$79.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="smartphone 3.jpeg" class="card-img-top" alt="Smartphone">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smartphone</h5>
+                    <p class="text-muted small">Latest model.</p>
+                    <p class="fw-bold text-success mb-2">$599.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="gaming console.jpeg" class="card-img-top" alt="Gaming Console">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Console</h5>
+                    <p class="text-muted small">Next-gen gaming.</p>
+                    <p class="fw-bold text-success mb-2">$499.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="camera.jpeg" class="card-img-top" alt="Camera">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Camera</h5>
+                    <p class="text-muted small">Capture every moment.</p>
+                    <p class="fw-bold text-success mb-2">$249.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Custom buttons for sliding -->
+        <button class="custom-carousel-btn custom-prev-btn" type="button" data-bs-target="#newArrivalsSlider" data-bs-slide="prev">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="custom-carousel-btn custom-next-btn" type="button" data-bs-target="#newArrivalsSlider" data-bs-slide="next">
+            <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+</section>
+  
+
+  <!-- Exclusive Deals Section (Multi-Item Slider) -->
+  <!-- Exclusive Deals Section (Multi-Item Slider) -->
+<section class="product-slider py-5">
+    <div class="container">
+      <h2 class="section-title">Exclusive Deals</h2>
+      <div id="exclusiveDealsSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="portable speaker 4.jpeg" class="card-img-top" alt="Portable Speaker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Portable Speaker</h5>
+                    <p class="text-muted small">Compact, premium sound.</p>
+                    <p class="fw-bold text-success mb-2">$39.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="smart doorbell.jpeg" class="card-img-top" alt="Smart Doorbell">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Doorbell</h5>
+                    <p class="text-muted small">Secure your home.</p>
+                    <p class="fw-bold text-success mb-2">$89.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Electric Toothbrush.jpeg" class="card-img-top" alt="Electric Toothbrush">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Electric Toothbrush</h5>
+                    <p class="text-muted small">Advanced cleaning.</p>
+                    <p class="fw-bold text-success mb-2">$49.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="wireless charger.jpeg" class="card-img-top" alt="Wireless Charger">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Wireless Charger</h5>
+                    <p class="text-muted small">Fast charging.</p>
+                    <p class="fw-bold text-success mb-2">$24.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Smart Scale.jpeg" class="card-img-top" alt="Smart Scale">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Scale</h5>
+                    <p class="text-muted small">Track your health.</p>
+                    <p class="fw-bold text-success mb-2">$34.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Air Purifier.jpeg" class="card-img-top" alt="Air Purifier">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Air Purifier</h5>
+                    <p class="text-muted small">Clean air solution.</p>
+                    <p class="fw-bold text-success mb-2">$69.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Robot Vacuum.jpeg" class="card-img-top" alt="Robot Vacuum">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Robot Vacuum</h5>
+                    <p class="text-muted small">Smart cleaning.</p>
+                    <p class="fw-bold text-success mb-2">$199.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Security Camera.jpeg" class="card-img-top" alt="Security Camera">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Security Camera</h5>
+                    <p class="text-muted small">24/7 monitoring.</p>
+                    <p class="fw-bold text-success mb-2">$59.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Gaming Mouse 4.jpeg" class="card-img-top" alt="Gaming Mouse">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Gaming Mouse</h5>
+                    <p class="text-muted small">Precision control.</p>
+                    <p class="fw-bold text-success mb-2">$29.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth Slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Smart Lock.jpeg" class="card-img-top" alt="Smart Lock">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Smart Lock</h5>
+                    <p class="text-muted small">Keyless entry.</p>
+                    <p class="fw-bold text-success mb-2">$99.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Coffee Maker.jpeg" class="card-img-top" alt="Coffee Maker">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Coffee Maker</h5>
+                    <p class="text-muted small">Perfect brew.</p>
+                    <p class="fw-bold text-success mb-2">$79.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="Fitness Band.jpeg" class="card-img-top" alt="Fitness Band">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fitness Band</h5>
+                    <p class="text-muted small">Stay active.</p>
+                    <p class="fw-bold text-success mb-2">$19.99</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Custom buttons for sliding -->
+        <button class="custom-carousel-btn custom-prev-btn" type="button" data-bs-target="#exclusiveDealsSlider" data-bs-slide="prev">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="custom-carousel-btn custom-next-btn" type="button" data-bs-target="#exclusiveDealsSlider" data-bs-slide="next">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section 
+  <section class="testimonials py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">🌟 What Our Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card border-0 shadow-sm text-center">
+              <img src="customer1.jpg" class="rounded-circle mx-auto mb-3" alt="Customer 1" width="100" height="100">
+              <div class="card-body">
+                <p class="card-text">"Zopify offers top-notch products and seamless shopping!"</p>
+                <h5 class="card-title">John Doe</h5>
+                <p class="text-muted small">Loyal Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="custom-carousel-btn custom-prev-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="custom-carousel-btn custom-next-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section> -->
+
+
+<!-- Featured Categories Section (Multi-Item Slider) -->
+<section class="featured-categories py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Explore Our Categories</h2>
+      <div id="categoriesSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="electronics.jpeg" class="card-img-top" alt="Electronics">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Electronics</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="fashion.jpeg" class="card-img-top" alt="Fashion">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fashion</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="home.jpeg" class="card-img-top" alt="Home">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Home</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Slide 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="sports.jpg" class="card-img-top" alt="Sports & Outdoors">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Sports & Outdoors</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="beauty.jpg" class="card-img-top" alt="Beauty">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Beauty</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="toys.jpg" class="card-img-top" alt="Toys & Games">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Toys & Games</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!-- Third Slide 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="kitchen.jpg" class="card-img-top" alt="Kitchen">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Kitchen</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="health.jpg" class="card-img-top" alt="Health & Wellness">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Health & Wellness</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="pets.jpg" class="card-img-top" alt="Pet Supplies">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Pet Supplies</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!-- Fourth Slide 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="books.jpg" class="card-img-top" alt="Books">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Books</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="automotive.jpg" class="card-img-top" alt="Automotive">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Automotive</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="garden.jpg" class="card-img-top" alt="Garden & Outdoor">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Garden & Outdoor</h5>
+                    <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>--> 
+        <!-- Custom buttons for sliding -->
+        <button class="custom-carousel-btn custom-prev-btn" type="button" data-bs-target="#categoriesSlider" data-bs-slide="prev">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="custom-carousel-btn custom-next-btn" type="button" data-bs-target="#categoriesSlider" data-bs-slide="next">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!-- Newsletter Signup Section -->
+<section class="newsletter py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Join the PrimeShop Club</h2>
+      <p class="lead mb-4">Unlock exclusive deals, early access to new arrivals, and insider updates—straight to your inbox.</p>
+      <form class="d-flex justify-content-center flex-wrap gap-2" action="#" method="POST">
+        <input 
+          type="email" 
+          class="form-control w-25 me-2" 
+          placeholder="Your email address" 
+          aria-label="Email" 
+          required
+        >
+        <button type="submit" class="btn btn-warning">Sign Me Up</button>
+      </form>
+      <p class="text-muted small mt-3">No spam, just value—we promise!</p>
+    </div>
+  </section>
+
+<!-- Why Shop With Us Section -->
+<section class="why-shop py-5">
+    <div class="container">
+      <h2 class="section-title">Why Shop With PrimeShop</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="bi bi-truck fs-1 text-warning"></i>
+          <h5 class="mt-3 fw-bold">Free Shipping</h5>
+          <p class="text-muted">On orders over $50</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-shield-lock fs-1 text-warning"></i>
+          <h5 class="mt-3 fw-bold">Secure Payments</h5>
+          <p class="text-muted">Shop with confidence</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-arrow-return-left fs-1 text-warning"></i>
+          <h5 class="mt-3 fw-bold">Easy Returns</h5>
+          <p class="text-muted">Hassle-free process</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card border-0 shadow-sm text-center">
+              <img src="customer1.jpg" class="rounded-circle mx-auto mb-3" alt="Customer 1" width="100" height="100">
+              <div class="card-body">
+                <p class="card-text">"PrimeShop offers top-notch products and seamless shopping!"</p>
+                <h5 class="card-title">John Doe</h5>
+                <p class="text-muted small">Loyal Customer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Additional testimonials can go here -->
+        </div>
+        <!-- Custom carousel controls -->
+        <button class="custom-carousel-btn custom-prev-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="custom-carousel-btn custom-next-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Enhanced Footer -->
+<footer class="text-white text-center text-md-start" style="background-color: #1a1a1a;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">PrimeShop</h5>
+          <p class="small">Your one-stop shop for premium products and unbeatable deals.</p>
+          <p class="small text-muted mt-2">Stay connected for exclusive offers!</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">About Us</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+            <li><a href="#" class="text-white">FAQ</a></li>
+            <li><a href="#" class="text-white">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Returns</a></li>
+            <li><a href="#" class="text-white">Shipping</a></li>
+            <li><a href="#" class="text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-white">Customer Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Follow Us</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-3 border-top border-dark">
+        <p class="mb-0 small">© 2025 PrimeShop. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="script.js" ></script>
+
+</body>
+</html>
+
